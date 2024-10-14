@@ -36,31 +36,70 @@ ul {
     padding-top: 20px;
     font-size: 2rem;
     font-weight: 900;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.sidebar .svgs {
+    height: 1.8rem;
+    filter: invert(96%) sepia(0%) saturate(17%) hue-rotate(296deg) brightness(104%) contrast(105%);
+}
+
+#home {
+    height: 2.3rem;
+}
+
+.sidebar > .title img {
+    height: 2.5rem;
 }
 
 .sidebar > * {
-    margin-left: 40px;
     margin-bottom: 40px;
     font-size: 1.5rem;
     font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar > ul > li {
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .header {
     display: grid;
     grid-template-rows: 1fr 2fr; 
     grid-template-columns: 1fr;
-    padding: 20px;
-    padding-top: 10px;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    overflow: visible;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px !important;
+    z-index: 1;
+}
+
+.header .svgs {
+    height: 2rem;
 }
 
 .header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #search-bar {
@@ -71,9 +110,28 @@ ul {
     font-size: 1.3rem;
 }
 
+.salutation {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
-.header .actions {
+.actions {
     display: flex;
+    gap: 40px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    font-weight: bold;  
+    background-color: rgb(73, 186, 238);
 }
 
 .main-content {
@@ -116,6 +174,49 @@ ul {
     gap: 40px;
     grid-template-columns: 1fr 1fr;
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+}
+
+.first .pfp {
+    height: 2.5rem;
+}
+
+.first {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.greet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.greet-user {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+}
+
+.greet-user .name {
+    font-size: 1.2rem;
+}
+
+.profile {
+    padding-top: 20px;
+}
+
+.profile .pfp {
+    height: 4rem;
 }
 
 [class^="announcement-"] {
