@@ -64,12 +64,13 @@ ul {
 }
 
 #search-bar {
-    background-color: rgb(178, 166, 166);
+    background-color: rgb(215, 205, 205);
     border: 0;
     border-radius: 10px;
     width: 45vw;
-
+    font-size: 1.3rem;
 }
+
 
 .header .actions {
     display: flex;
@@ -102,15 +103,19 @@ ul {
 }
 
 .project-list > li {
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px, inset 0.5em 0em gold;
     height: 20vh;
     padding: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .project-list {
     display: grid;
     gap: 40px;
     grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
 }
 
 [class^="announcement-"] {
@@ -118,6 +123,14 @@ ul {
     border: 1px solid red;
 }
 
-.announcements {
+.projects {
+    font-size: 1.5rem;
+}
 
+.projects .title {
+    font-weight: 600;
+}
+
+.project-list > li > .title {
+    margin-bottom: 15px;   
 }
